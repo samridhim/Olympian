@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.hp_pc.olympian.MainActivity">
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/map"
+        android:padding="8dp"
+        android:text="Distance : 0.0 km"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gpsStatus"
+        android:layout_alignParentStart="true"
+        android:padding="8dp"
+        android:text="Time : 0h:0m:0s"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/calories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Calories Burnt : 0 kcal"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textSize="14sp"
+        android:layout_below="@+id/currentPace"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/my_button_bg"
+        android:onClick="stopActivity"
+        android:text="Stop Activity" />
+
+    <TextView
+        android:id="@+id/gpsStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:text="Searching for GPS..."
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/currentPace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Current Pace : 0.0 km/hr"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textSize="14sp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/distance"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/averagePace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Average Pace : 0.0 km/hr"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textSize="14sp"
+        android:layout_above="@+id/time"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

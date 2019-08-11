@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Olympian</string>
+    <string name="title_activity_tracker">Map</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

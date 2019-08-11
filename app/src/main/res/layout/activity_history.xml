@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp_pc.olympian.History">
+
+    <TextView
+        android:id="@+id/DatabaseTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="LAST ACTIVITY"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/historyTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/historyDistance"
+        android:layout_marginTop="18dp"
+        android:text="Time"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/historyDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/historyTitleEditText"
+        android:layout_marginTop="47dp"
+        android:text="Distance"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/historyPace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pace"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/historyTime"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/historyDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity Details"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/historyPace"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/my_button_bg"
+        android:onClick="cancelSavingAndReturn"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/cancel"
+        android:background="@drawable/my_button_bg"
+        android:elevation="0dp"
+        android:onClick="saveToDatabase"
+        android:text=" Save To Database " />
+
+    <EditText
+        android:id="@+id/historyTitleEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DatabaseTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:text="Activity Title"
+        android:textAlignment="center" />
+
+</RelativeLayout>

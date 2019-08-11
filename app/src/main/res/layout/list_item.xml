@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/ListViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Element : Title" />
+
+    <TextView
+        android:id="@+id/ElementDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Element Distance"
+        android:layout_below="@+id/ListViewTitle"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/ElementDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Element Duration"
+        android:layout_below="@+id/ElementDistance"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/ElementPace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Element Pace"
+        android:layout_below="@+id/ElementDuration"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/ElementCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Element Calories"
+        android:layout_below="@+id/ElementPace"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/ElementDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Element Date"
+        android:layout_below="@+id/ElementCalories"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/ElementTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Element Time"
+        android:layout_below="@+id/ElementDate"
+        android:layout_alignParentStart="true" />
+</LinearLayout>
